@@ -1,12 +1,10 @@
- */
-/**
  *          Name:Devon Trimble
  *          Filename: HouseOfHagus
  *          Creation Date: October 10, 2014
  *          Description: This program takes names for a list if they are VIP or not and 
  *          allows you to remove and modify names if they need to be
  * 
- */
+ *
 [Code for ADD button]
 // TODO add your handling code here:
         String name = txt_nameBox.getText();

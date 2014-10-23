@@ -28,6 +28,7 @@
             if (nameList.get(b).equals(nameToRemove))
             {
                 indexOfNameToRemove = b ;
+                //Coded by DevonTrimble//
             }
         }
         //REMOVE NAME

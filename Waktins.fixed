@@ -1,10 +1,5 @@
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-//This is the code for [ADD] button after you have made an ACTION PREFORMED//
-//INSERT THIS RIGHT 'AFTER' THE FIRST CURLY IN THE ACTION PERFORMED(add button)//
-//DO NOT ADD THESE COMMENTS, COPY FROM "TODO add your handling code here"//
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
+[Code for ADD button]
 // TODO add your handling code here:
         String name = txt_nameBox.getText();
         
@@ -21,15 +16,8 @@
         //OUTPUT NAMELIST TO nameListOutput
         txt_nameBoxOutput.setText (displayThis);
         
-        
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~     
-        
-//This is the code for [REMOVE] button after you have made an ACTION PREFORMED//
-//INSERT THIS RIGHT 'AFTER' THE FIRST CURLY IN THE ACTION PERFORMED (remove button)//
-//DO NOT ADD THESE COMMENTS, COPY FROM "TODO add your handling code here"//
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
+[Code for  REMOVE button]
 //TODO add your handling code here
 //OBTAIN INPUTTED NAME
         String nameToRemove = txt_nameBox.getText();

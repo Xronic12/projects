@@ -1,0 +1,57 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//This is the code for [ADD] button after you have made an ACTION PREFORMED//
+//INSERT THIS RIGHT 'AFTER' THE FIRST CURLY IN THE ACTION PERFORMED(add button)//
+//DO NOT ADD THESE COMMENTS, COPY FROM "TODO add your handling code here"//
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+// TODO add your handling code here:
+        String name = txt_nameBox.getText();
+        
+        //UPDATE THE ARRAYLIST
+        nameList.add(name);
+        
+        
+        //BUILD STRING TO OUTPUT NAME LIST
+        String displayThis = " ";
+        for (int a = 0 ; a < nameList.size() ; a++)
+        {
+            displayThis = displayThis + nameList.get(a) + "\n";
+        }
+        //OUTPUT NAMELIST TO nameListOutput
+        txt_nameBoxOutput.setText (displayThis);
+        
+        
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~     
+        
+//This is the code for [REMOVE] button after you have made an ACTION PREFORMED//
+//INSERT THIS RIGHT 'AFTER' THE FIRST CURLY IN THE ACTION PERFORMED (remove button)//
+//DO NOT ADD THESE COMMENTS, COPY FROM "TODO add your handling code here"//
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+//TODO add your handling code here
+//OBTAIN INPUTTED NAME
+        String nameToRemove = txt_nameBox.getText();
+        //FIND INDEX OF NAME TO REMOVE
+        int indexOfNameToRemove = 99999;
+        for (int b=0 ; b < nameList.size() ; b++)
+        {
+            if (nameList.get(b).equals(nameToRemove))
+            {
+                indexOfNameToRemove = b ;
+            }
+        }
+        //REMOVE NAME
+        if (indexOfNameToRemove != 99999)
+        {
+            nameList.remove(indexOfNameToRemove);
+        }
+        //REDISPLAY LIST WITH NEW ORDER
+        String textToOutput = "";
+                for (int c = 0 ; c < nameList.size() ; c++ )
+                { 
+                    textToOutput = textToOutput + nameList.get(c) + "\n";    
+                }
+                txt_nameBoxOutput.setText (textToOutput);
+                
